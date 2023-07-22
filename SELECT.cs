@@ -27,8 +27,6 @@ namespace DataBaseProject
         {
 
             SqlDataReader sqlreader = null;
-            SqlCommand TableLong = new SqlCommand("SELECT COUNT(*) FROM church", _c);
-            int counter = (int)TableLong.ExecuteScalar();
             SqlCommand getSelCommand = new SqlCommand($"SELECT {_a} FROM church", _c);
 
             try
